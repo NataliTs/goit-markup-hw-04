@@ -1,0 +1,347 @@
+/* колір заголовків #212121 */
+/* другорядний колір тексту #757575*/
+/* Білий #FFFFFF */
+/* акцент #2196F3 */
+/* лого чорний #000000 */
+/* основний колір фона  #F5F5F5; */
+/* колір шапки  #FFFFFF*/
+/* другорядний колір фона  #F5F4FA; */
+/*  */
+:root {
+  --title-text-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-background-color: #f5f5f5;
+  --secondary-background-color: #f5f4fa;
+  --hero-background-color: #2f303a;
+  --header-background-color: #ffffff;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --button-activ-background-color: #188ce8;
+  --address-color: rgba(255, 255, 255, 0.6);
+  --border-color: #eeeeee;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--title-text-color);
+}
+.list {
+  list-style: none;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid red; */
+}
+/* Header */
+.header {
+  background-color: var(--header-background-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid var(--border-color);
+}
+/* Лого */
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  letter-spacing: 0.03em;
+}
+.header-nav .logo {
+  margin-right: 93px;
+}
+.header-logo {
+  color: var(--black-color);
+}
+.footer-logo {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+/* Site nav */
+.link {
+  text-decoration: none;
+}
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.site-nav .contact {
+  color: var(--text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--hero-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  width: 696px;
+  margin: 0 auto;
+}
+.button {
+  font-family: inherit;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  min-width: 216px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  border: none;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--button-activ-background-color);
+}
+/* Section */
+
+.section,
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-activity {
+  padding-top: 0;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.card-team {
+  background-color: var(--white-color);
+}
+.team {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.team .job {
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.team-about {
+  padding: 30px 0;
+  /* outline: 2px solid red; */
+}
+
+/* Features */
+
+.feature {
+  max-width: 270px;
+}
+
+.features .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.features .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.features {
+  display: flex;
+  gap: 30px;
+}
+
+/* activity */
+
+.activity,
+.team-card {
+  display: flex;
+  gap: 30px;
+}
+.activity-item {
+  width: calc((100% - 60px) / 3);
+}
+/* Footer */
+.footer {
+  background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address .location {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.address .link {
+  color: var(--address-color);
+  text-decoration: none;
+  display: inline-block;
+}
+.address .link:hover,
+.address .link:focus,
+.address .location:hover,
+.address .location:focus {
+  color: var(--accent-color);
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+/* Портфоліо */
+.filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  padding: 6px 22px;
+  border: none;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.filters {
+  margin-bottom: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.card {
+  width: calc((100% - 60px) / 3);
+}
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+.card-group {
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.card-about {
+  /* outline: 2px solid red; */
+  border: 1px solid var(--border-color);
+  border-top: none;
+  padding: 20px 24px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 30px;
+}
